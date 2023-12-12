@@ -1,0 +1,19 @@
+.hero {
+  width: 100%;
+  position: absolute;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__bubble {
+    background-color: $color-light-blue;
+    position: absolute;
+    height: 75%;
+    width: 85%;
+    top: 70px;
+    right: 0;
+    z-index: -1;
+    border-bottom-left-radius: 100px;
+  }
+}

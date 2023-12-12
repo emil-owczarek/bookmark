@@ -1,6 +1,9 @@
 @import './utils/reset.scss';
 @import './utils/variables.scss';
 
+@import '../components/navigation/Navigations.scss';
+@import '../components/hero/Hero.scss';
+
 body {
   font-size: $body-font-size;
   font-family: $font-family-rubik;
