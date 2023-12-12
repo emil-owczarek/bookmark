@@ -1,9 +1,12 @@
 .hero {
   width: 100%;
-  position: absolute;
+  position: relative;
+  margin-bottom: 60px;
 
   &__image {
-    width: 100%;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
   }
 
   &__bubble {
