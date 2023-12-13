@@ -21,9 +21,9 @@ const Features = () => {
         them on the go.
       </p>
       <div className="features__options">
-        {featuresData.map((feature, index) => (
+        {featuresData.map((feature) => (
           <button
-            key={index}
+            key={feature.id}
             className={`features__option ${
               activeFeature === feature.title ? 'active' : ''
             }`}

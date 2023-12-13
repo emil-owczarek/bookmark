@@ -45,13 +45,15 @@
 
   &__image {
     width: 100%;
+    max-width: 600px;
   }
 
   &__bubble {
     background-color: $color-light-blue;
     position: absolute;
-    height: 206px;
+    height: 55vw;
     width: 100%;
+    max-width: 600px;
     bottom: -34px;
     left: -30px;
     z-index: -1;

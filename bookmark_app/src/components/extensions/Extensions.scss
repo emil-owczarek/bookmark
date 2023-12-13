@@ -1,0 +1,18 @@
+.extensions {
+  padding: 0 30px;
+  text-align: center;
+
+  &__title {
+    font-size: 25px;
+    color: $color-dark-blue;
+    font-weight: $font-weight-medium;
+    padding-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 15px;
+    color: $color-grayish;
+    line-height: 25px;
+    padding-bottom: 45px;
+  }
+}

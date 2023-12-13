@@ -1,3 +1,4 @@
+import Extensions from './components/extensions/Extensions';
 import Features from './components/features/Features';
 import Hero from './components/hero/Hero';
 import Introduction from './components/introduction/Introduction';
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Introduction />
       <Features />
+      <Extensions />
     </div>
   );
 };

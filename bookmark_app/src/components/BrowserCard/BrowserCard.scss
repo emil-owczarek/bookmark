@@ -1,0 +1,42 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  height: 370px;
+  width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+
+  &__image {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    color: $color-dark-blue;
+    padding-bottom: 15px;
+    font-weight: $font-weight-medium;
+  }
+
+  &__version-note {
+    color: $color-grayish;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+
+  &__dots {
+    padding-bottom: 40px;
+  }
+
+  &__button {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: $color-light-blue;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+}
