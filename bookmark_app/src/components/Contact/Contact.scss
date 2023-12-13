@@ -1,0 +1,64 @@
+.contact {
+  background-color: $color-light-blue;
+  color: white;
+  padding: 0 20px;
+  padding-bottom: 50px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: $font-weight-medium;
+    padding-top: 80px;
+    padding-bottom: 12px;
+    letter-spacing: 4px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: $font-weight-medium;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  &__input {
+    width: 92%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+  }
+
+  &__button {
+    font-family: $font-family-rubik;
+    background-color: $color-light-red;
+    width: 92%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  &__error {
+    font-size: 15px;
+    width: 92%;
+    padding: 5px 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: $color-light-red;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+.contact__input--invalid {
+  border: 2px solid $color-light-red;
+  border-radius: 3px;
+}

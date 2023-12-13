@@ -15,7 +15,7 @@ export const faqData = [
     id: '63717f11-228c-4444-8c59-1a0e57ef5cb7',
     question: 'Is there a mobile app?',
     answer:
-      'Forcing function . Sea change we need to make the new version clean and sexy. Downselect finance groom the backlog.',
+      'Forcing function. Sea change we need to make the new version clean and sexy. Downselect finance groom the backlog.',
   },
   {
     id: 'e1f97a5f-f612-4b3a-9a58-efe74a360121',

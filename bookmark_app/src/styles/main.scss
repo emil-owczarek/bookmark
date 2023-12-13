@@ -9,6 +9,11 @@
 @import '../components/BrowserCard/BrowserCard.scss';
 @import '../components/FAQ/FAQ.scss';
 @import '../components/Accordion/Accordion.scss';
+@import '../components/Contact/Contact.scss';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-size: $body-font-size;
