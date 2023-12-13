@@ -1,5 +1,5 @@
 .introduction {
-  padding: 0 15px;
+  padding: 0 25px;
   text-align: center;
 
   &__title {
@@ -12,17 +12,20 @@
 
   &__description {
     color: $color-grayish;
+    font-size: 16px;
     line-height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   &__buttons {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 150px;
+    font-size: 15px;
   }
 
   &__button {
-    padding: 17px 10px;
+    padding: 17px 15px;
     text-decoration: none;
     border-radius: 5px;
 
