@@ -9,13 +9,13 @@ const Introduction = () => {
       <div className="introduction__buttons">
         <a
           className="introduction__button introduction__button--blue"
-          href="www"
+          href="https://www.google.com/intl/pl_pl/chrome/"
         >
           Get it on Chrome
         </a>
         <a
           className="introduction__button introduction__button--white"
-          href="www"
+          href="https://www.mozilla.org/pl/firefox/"
         >
           Get it on Firefox
         </a>

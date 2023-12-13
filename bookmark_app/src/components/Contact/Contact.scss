@@ -31,6 +31,14 @@
     border: none;
     border-radius: 2px;
     outline: none;
+
+    &--invalid {
+      border: 2px solid $color-light-red;
+      border-radius: 3px;
+      background-image: url('../../../public/assets/icons/icon-error.svg');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
   }
 
   &__button {
@@ -56,9 +64,4 @@
       display: none;
     }
   }
-}
-
-.contact__input--invalid {
-  border: 2px solid $color-light-red;
-  border-radius: 3px;
 }

@@ -5,6 +5,7 @@ import Introduction from './components/Introduction/Introduction';
 import Navigation from './components/Navigation/Navigation';
 import FAQ from './components/FAQ/FAQ';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Extensions />
       <FAQ />
       <Contact />
+      <Footer />
     </div>
   );
 };

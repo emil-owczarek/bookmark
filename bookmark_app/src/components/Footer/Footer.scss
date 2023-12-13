@@ -1,0 +1,20 @@
+.footer {
+  font-size: 15px;
+  background-color: $color-dark-blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(197, 197, 197);
+  gap: 30px;
+  padding-top: 50px;
+  text-transform: uppercase;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
