@@ -1,8 +1,9 @@
-import Extensions from './components/extensions/Extensions';
-import Features from './components/features/Features';
-import Hero from './components/hero/Hero';
-import Introduction from './components/introduction/Introduction';
-import Navigation from './components/navigation/Navigation';
+import Extensions from './components/Extensions/Extensions';
+import Features from './components/Features/Features';
+import Hero from './components/Hero/Hero';
+import Introduction from './components/Introduction/Introduction';
+import Navigation from './components/Navigation/Navigation';
+import FAQ from './components/FAQ/FAQ';
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
       <Introduction />
       <Features />
       <Extensions />
+      <FAQ />
+      <Contact />
     </div>
   );
 };

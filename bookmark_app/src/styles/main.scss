@@ -1,12 +1,14 @@
 @import './utils/reset.scss';
 @import './utils/variables.scss';
 
-@import '../components/navigation/Navigations.scss';
-@import '../components/hero/Hero.scss';
-@import '../components/introduction/Introduction.scss';
-@import '../components/features/Features.scss';
-@import '../components/extensions/Extensions.scss';
+@import '../components/Navigation/Navigations.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/Introduction/Introduction.scss';
+@import '../components/Features/Features.scss';
+@import '../components/Extensions/Extensions.scss';
 @import '../components/BrowserCard/BrowserCard.scss';
+@import '../components/FAQ/FAQ.scss';
+@import '../components/Accordion/Accordion.scss';
 
 body {
   font-size: $body-font-size;

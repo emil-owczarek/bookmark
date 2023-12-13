@@ -9,7 +9,7 @@ const Extensions = () => {
         We've got more browsers in the pipeline. Please do let us know if you've
         got a favourite you'd like us to prioritize.
       </p>
-      <div>
+      <div className="cards-container">
         {extensionData.map((extension) => (
           <BrowserCard
             key={extension.id}
