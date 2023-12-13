@@ -13,7 +13,7 @@ const Features = () => {
   );
 
   return (
-    <div className="features">
+    <section className="features" id="features">
       <h2 className="features__title">Features</h2>
       <p className="features__description">
         Our aim is to make it quick and easy for you to access your favourite
@@ -53,7 +53,7 @@ const Features = () => {
           </p>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

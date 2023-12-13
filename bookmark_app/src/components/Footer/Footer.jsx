@@ -1,10 +1,24 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src="assets/images/logo-bookmark--white.svg" alt="" />
-      <h4 className="footer__option">Fetures</h4>
-      <h4 className="footer__option">Pricing</h4>
-      <h4 className="footer__option">Contact</h4>
+      <img src="assets/images/logo-bookmark-white-text.svg" alt="" />
+      <ul className="footer__options">
+        <li>
+          <a href="#features" className="footer__option">
+            Fetures
+          </a>
+        </li>
+        <li>
+          <a href="#extensions" className="footer__option">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="footer__option">
+            Contact
+          </a>
+        </li>
+      </ul>
       <div className="footer__icons">
         <img src="assets/icons/icon-facebook.svg" alt="" />
         <img src="assets/icons/icon-twitter.svg" alt="" />

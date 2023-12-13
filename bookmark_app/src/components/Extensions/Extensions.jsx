@@ -3,7 +3,7 @@ import { extensionData } from './extensionsData';
 
 const Extensions = () => {
   return (
-    <div className="extensions">
+    <section className="extensions" id="extensions">
       <h2 className="extensions__title">Download the extension</h2>
       <p className="extensions__description">
         We've got more browsers in the pipeline. Please do let us know if you've
@@ -19,7 +19,7 @@ const Extensions = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

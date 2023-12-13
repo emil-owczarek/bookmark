@@ -40,7 +40,7 @@ const Contact = () => {
   }`;
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <form className="contact__form" onSubmit={handleSubmit}>
         <p className="contact__description">35.000+ ALREADY JOINED</p>
         <h3 className="contact__title">

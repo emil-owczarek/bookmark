@@ -4,10 +4,22 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: rgb(197, 197, 197);
   gap: 30px;
   padding-top: 50px;
   text-transform: uppercase;
+
+  &__options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing: 1px;
+  }
+
+  &__option {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+  }
 
   &__icons {
     display: flex;

@@ -1,6 +1,6 @@
 const Introduction = () => {
   return (
-    <div className="introduction">
+    <div className="introduction" id="home">
       <h1 className="introduction__title">A Simple Bookmark Manager</h1>
       <p className="introduction__description">
         A clean and simple interface to organize your favourite websites. Open a
