@@ -1,11 +1,13 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src="assets/images/logo-bookmark-white-text.svg" alt="" />
+      <a href="#home">
+        <img src="assets/images/logo-bookmark-white-text.svg" alt="" />
+      </a>
       <ul className="footer__options">
         <li>
           <a href="#features" className="footer__option">
-            Fetures
+            Features
           </a>
         </li>
         <li>

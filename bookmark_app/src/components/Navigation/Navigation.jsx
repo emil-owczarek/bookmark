@@ -1,6 +1,6 @@
 const Navigation = ({ toggleMenu }) => {
   return (
-    <div className="navigation">
+    <div className="navigation" id="home">
       <img src="assets/images/logo-bookmark.svg" alt="bookmark logo" />
       <img
         onClick={toggleMenu}
