@@ -17,6 +17,7 @@ const Extensions = () => {
             browserName={extension.browserName}
             imgSrc={extension.imgSrc}
             version={extension.version}
+            address={extension.address}
           />
         ))}
       </div>

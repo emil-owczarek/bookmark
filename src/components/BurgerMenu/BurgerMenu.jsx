@@ -36,8 +36,12 @@ const BurgerMenu = ({ isMenuActive, toggleMenu }) => {
           Login
         </button>
         <div className="menu__icons">
-          <img src="assets/icons/icon-facebook.svg" alt="" />
-          <img src="assets/icons/icon-twitter.svg" alt="" />
+          <a href="https://www.confilogiteam.com/">
+            <img src="assets/icons/icon-facebook.svg" alt="facebook logo" />
+          </a>
+          <a href="https://www.confilogiteam.com/">
+            <img src="assets/icons/icon-twitter.svg" alt="twitter logo" />
+          </a>
         </div>
       </menu>
     </>

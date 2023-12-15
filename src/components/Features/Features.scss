@@ -51,10 +51,6 @@
     padding: 20px 0;
     cursor: pointer;
 
-    &:hover {
-      color: $color-light-red;
-    }
-
     &:last-child {
       border-bottom: 1px solid rgb(207, 207, 207);
     }
@@ -62,6 +58,10 @@
     @media (min-width: 1100px) {
       border-top: none;
       border-bottom: 1px solid rgb(211, 210, 210);
+
+      &:hover {
+        color: $color-light-red;
+      }
     }
   }
 

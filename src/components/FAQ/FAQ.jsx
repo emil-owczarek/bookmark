@@ -1,6 +1,6 @@
 import Accordion from '../Accordion/Accordion';
 
-const FAQ = () => {
+const FAQ = ({ setModalOpen }) => {
   return (
     <div className="questions">
       <h2 className="questions__title">Frequently Asked Questions</h2>
@@ -9,9 +9,9 @@ const FAQ = () => {
         answered please feel free to email us.
       </p>
       <Accordion />
-      <a className="questions__button" href="www">
+      <button className="questions__button" onClick={setModalOpen}>
         More Info
-      </a>
+      </button>
     </div>
   );
 };

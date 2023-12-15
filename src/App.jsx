@@ -60,7 +60,7 @@ const App = () => {
         setModalOpen={setModalOpen}
       />
       <Extensions />
-      <FAQ />
+      <FAQ setModalOpen={setModalOpen} />
       <div className="footer-container">
         <Contact />
         <Footer />
