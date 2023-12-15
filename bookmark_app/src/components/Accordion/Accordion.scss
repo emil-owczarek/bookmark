@@ -35,6 +35,16 @@
       font: inherit;
       color: inherit;
       font-size: 15px;
+      text-align: left;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-light-red;
+      }
+
+      @media (min-width: 900px) {
+        font-size: 17px;
+      }
     }
   }
 }

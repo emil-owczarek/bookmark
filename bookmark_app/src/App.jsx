@@ -8,9 +8,13 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import BurgerMenu from './components/BurgerMenu/BurgerMenu';
 import { useEffect, useState } from 'react';
+import Modal from './components/Modal/Modal';
+import { featuresData } from './components/Features/featuresData';
 
 const App = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const [activeFeature, setActiveFeature] = useState(featuresData[0].title);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
@@ -24,17 +28,43 @@ const App = () => {
     }
   }, [isMenuActive]);
 
+  const handleMouseMove = (event) => {
+    if (event.clientY <= 10) {
+      setModalOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
-    <div>
+    <div className="app">
       <Navigation isMenuActive={isMenuActive} toggleMenu={toggleMenu} />
-      <Hero />
-      <Introduction />
+      <div className="hero-container">
+        <Hero />
+        <Introduction />
+      </div>
+      <Modal
+        isModalOpen={isModalOpen}
+        setModalOpen={setModalOpen}
+        activeFeature={activeFeature}
+      />
       <BurgerMenu isMenuActive={isMenuActive} toggleMenu={toggleMenu} />
-      <Features />
+      <Features
+        activeFeature={activeFeature}
+        setActiveFeature={setActiveFeature}
+        setModalOpen={setModalOpen}
+      />
       <Extensions />
       <FAQ />
-      <Contact />
-      <Footer />
+      <div className="footer-container">
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -64,22 +64,28 @@ const Contact = () => {
         <h3 className="contact__title">
           Stay up-to-date with what we're doing
         </h3>
-        {/* <label htmlFor={id}>Email</label> */}
-        <input
-          className={inputClassName}
-          onChange={handleChange}
-          //   type="email"
-          placeholder="owczarekemil@gmail.com"
-          name="email"
-          value={formData.email}
-          id={id}
-          autoComplete="true"
-          //   required
-        />
+        <div className="contact__form-container">
+          <div className="contact__input-container">
+            {/* <label htmlFor={id}>Email</label> */}
+            <input
+              className={inputClassName}
+              onChange={handleChange}
+              //   type="email"
+              placeholder="owczarekemil@gmail.com"
+              name="email"
+              value={formData.email}
+              id={id}
+              autoComplete="true"
+              //   required
+            />
 
-        <div className={errorClassName}>Whoops, make sure it's an email</div>
+            <div className={errorClassName}>
+              Whoops, make sure it's an email
+            </div>
+          </div>
 
-        <button className="contact__button">Contact Us</button>
+          <button className="contact__button">Contact Us</button>
+        </div>
       </form>
     </section>
   );

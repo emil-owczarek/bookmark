@@ -1,6 +1,9 @@
 .introduction {
-  padding: 0 25px;
   text-align: center;
+
+  @media (min-width: 1100px) {
+    max-width: 40%;
+  }
 
   &__title {
     color: $color-dark-blue;
@@ -8,6 +11,11 @@
     font-size: 35px;
     line-height: 45px;
     padding-bottom: 20px;
+    margin: 0 auto;
+
+    @media (min-width: 1100px) {
+      text-align: left;
+    }
   }
 
   &__description {
@@ -15,31 +23,73 @@
     font-size: 16px;
     line-height: 30px;
     padding-bottom: 35px;
+    max-width: 550px;
+    margin: 0 auto;
+
+    @media (min-width: 1100px) {
+      text-align: left;
+    }
   }
 
   &__buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     padding-bottom: 150px;
     font-size: 15px;
+
+    @media (min-width: 1100px) {
+      gap: 25px;
+      justify-content: flex-start;
+    }
   }
 
   &__button {
-    padding: 17px 15px;
     text-decoration: none;
+    padding: 17px 15px;
     border-radius: 5px;
+
+    @media (min-width: 1100px) {
+      padding: 17px calc(2.5vw / 1.5);
+    }
 
     &--blue {
       color: white;
       font-weight: $font-weight-medium;
       background-color: $color-light-blue;
+      border: 1px solid transparent;
+
+      &:hover {
+        color: $color-light-blue;
+        background-color: white;
+        border: 1px solid $color-light-blue;
+      }
+
+      &:active {
+        background-color: rgb(36, 36, 209);
+        border: 1px solid transparent;
+        color: white;
+      }
     }
 
     &--white {
       color: gray; // $color-grayish
       font-weight: $font-weight-medium;
       background-color: rgb(240, 240, 240);
-      box-shadow: 0px 2px 15px 0px rgb(203 204 217);
+      box-shadow: 0px 0 4px 0px rgba(0, 0, 0, 0.3);
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: white;
+        color: rgb(32, 32, 32);
+        border: 1px solid rgb(32, 32, 32);
+      }
+
+      &:active {
+        background-color: rgb(32, 32, 32);
+        border: 1px solid transparent;
+        color: white;
+      }
     }
   }
 }

@@ -6,7 +6,13 @@
   flex-direction: column;
   gap: 30px;
   padding-top: 50px;
+  padding-bottom: 50px;
   text-transform: uppercase;
+
+  @media (min-width: 750px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   &__options {
     display: flex;
@@ -14,11 +20,19 @@
     flex-direction: column;
     gap: 30px;
     letter-spacing: 1px;
+
+    @media (min-width: 750px) {
+      flex-direction: row;
+    }
   }
 
   &__option {
     text-decoration: none;
     color: rgb(197, 197, 197);
+
+    &:hover {
+      color: $color-light-red;
+    }
   }
 
   &__icons {
@@ -27,6 +41,35 @@
     justify-content: space-between;
     width: 22%;
     padding-top: 20px;
-    padding-bottom: 50px;
+    cursor: pointer;
+
+    @media (min-width: 750px) {
+      padding-top: unset;
+      justify-content: space-evenly;
+    }
+
+    &--facebook {
+      height: 24px;
+      width: 24px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../../../public/assets/icons/icon-facebook.svg);
+
+      &:hover {
+        background-image: url(../../../public/assets/icons/icon-facebook-red.svg);
+      }
+    }
+
+    &--twitter {
+      height: 24px;
+      width: 24px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../../../public/assets/icons/icon-twitter.svg);
+
+      &:hover {
+        background-image: url(../../../public/assets/icons/icon-twitter-red.svg);
+      }
+    }
   }
 }

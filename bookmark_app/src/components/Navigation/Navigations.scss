@@ -2,5 +2,63 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px 85px 30px;
+  padding: 40px 0 85px 0;
+
+  @media (min-width: 1100px) {
+    padding-bottom: 200px;
+  }
+
+  &__options {
+    display: none;
+
+    @media (min-width: 750px) {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+
+  &__option {
+    text-decoration: none;
+    color: $color-dark-blue;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $color-light-red;
+    }
+  }
+
+  &__burger-icon {
+    @media (min-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    font-size: 13px;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: $color-light-red;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-light-red;
+      background-color: white;
+      border-color: $color-light-red;
+    }
+
+    &:active {
+      color: white;
+      border-radius: 5px;
+      background-color: red;
+    }
+  }
 }

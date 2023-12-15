@@ -10,8 +10,9 @@ const Extensions = () => {
         got a favourite you'd like us to prioritize.
       </p>
       <div className="cards-container">
-        {extensionData.map((extension) => (
+        {extensionData.map((extension, index) => (
           <BrowserCard
+            index={index}
             key={extension.id}
             browserName={extension.browserName}
             imgSrc={extension.imgSrc}

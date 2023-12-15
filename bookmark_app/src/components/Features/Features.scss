@@ -1,14 +1,19 @@
 .features {
-  padding: 0 30px;
   text-align: center;
-  padding-bottom: 100px;
-  position: relative;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 100px;
+  }
 
   &__title {
     font-size: 25px;
     color: $color-dark-blue;
     font-weight: $font-weight-medium;
     padding-bottom: 15px;
+
+    @media (min-width: 900px) {
+      font-size: 35px;
+    }
   }
 
   &__description {
@@ -16,10 +21,22 @@
     color: $color-grayish;
     line-height: 25px;
     padding-bottom: 45px;
+    max-width: 470px;
+    margin: 0 auto;
+
+    @media (min-width: 900px) {
+      font-size: 17px;
+    }
   }
 
   &__options {
-    padding-bottom: 70px;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media (min-width: 1100px) {
+      display: flex;
+      padding-bottom: 200px;
+    }
   }
 
   &__option {
@@ -32,32 +49,87 @@
     border: none;
     border-top: 1px solid rgb(211, 210, 210);
     padding: 20px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-light-red;
+    }
 
     &:last-child {
       border-bottom: 1px solid rgb(207, 207, 207);
     }
+
+    @media (min-width: 1100px) {
+      border-top: none;
+      border-bottom: 1px solid rgb(211, 210, 210);
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    background-color: $color-light-blue;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    display: none;
+
+    &:hover {
+      color: $color-light-blue;
+      background-color: white;
+      border: 1px solid $color-light-blue;
+    }
+
+    &:active {
+      background-color: rgb(36, 36, 209);
+      border: 1px solid transparent;
+      color: white;
+    }
+
+    @media (min-width: 1200px) {
+      display: inline-block;
+    }
   }
 
   &__image-container {
-    position: relative;
-    margin-bottom: 80px;
+    position: absolute;
+    left: 0;
   }
 
   &__image {
-    width: 100%;
+    width: 95%;
     max-width: 600px;
+    padding: 40px;
+    padding-left: 20px;
+    max-width: 600px;
+    padding-bottom: 0px;
+    animation: float 6s ease-in-out infinite;
+
+    @media (min-width: 1100px) {
+      position: relative;
+      width: 95%;
+      bottom: 60px;
+      left: 90px;
+    }
   }
 
   &__bubble {
-    background-color: $color-light-blue;
+    background-color: hsl(231, 69%, 60%);
     position: absolute;
-    height: 55vw;
-    width: 100%;
+    height: 80%;
+    width: 78%;
     max-width: 600px;
-    bottom: -34px;
-    left: -30px;
+    top: 105px;
+    left: 0;
     z-index: -1;
     border-bottom-right-radius: 100px;
+    border-top-right-radius: 200px;
+  }
+
+  &__container {
+    position: absolute;
+    left: 0;
   }
 }
 
@@ -73,5 +145,39 @@
     height: 4px;
     background-color: $color-light-red;
     border-radius: 3px;
+
+    @media (min-width: 1100px) {
+      width: 100%;
+    }
+  }
+}
+
+.features-container {
+  gap: 43px;
+  display: flex;
+  min-height: 224px;
+  flex-direction: column;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+}
+
+.feature__container {
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: left;
   }
 }

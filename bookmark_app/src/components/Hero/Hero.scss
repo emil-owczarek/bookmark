@@ -1,13 +1,24 @@
 .hero {
-  width: 100%;
-  position: relative;
   margin-bottom: 60px;
+  height: calc(100vw / 1.5);
+  max-height: 400px;
+
+  &__container {
+    position: absolute;
+    right: 0;
+  }
 
   &__image {
-    display: block;
     width: 95%;
     max-width: 600px;
-    margin: 0 auto;
+    animation: float 6s ease-in-out infinite;
+
+    @media (min-width: 1100px) {
+      position: relative;
+      width: 95%;
+      bottom: 60px;
+      right: 60px;
+    }
   }
 
   &__bubble {
@@ -20,5 +31,17 @@
     right: 0;
     z-index: -1;
     border-bottom-left-radius: 100px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

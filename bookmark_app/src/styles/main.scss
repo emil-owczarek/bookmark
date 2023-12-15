@@ -12,12 +12,38 @@
 @import '../components/Contact/Contact.scss';
 @import '../components/Footer/Footer.scss';
 @import '../components/BurgerMenu/BurgerMenu.scss';
+@import '../components/Modal/Modal.scss';
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: $body-font-size;
   font-family: $font-family-rubik;
+}
+
+.hero-container {
+  @media (min-width: 1100px) {
+    display: flex;
+  }
+}
+
+.app {
+  padding: 0 25px;
+  @media (min-width: 1100px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 0;
+  }
+}
+
+.footer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
 }

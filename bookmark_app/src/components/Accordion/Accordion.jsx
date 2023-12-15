@@ -22,6 +22,7 @@ const Accordion = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
+                gap: '10px',
               }}
             >
               <h2>
@@ -33,6 +34,7 @@ const Accordion = () => {
                 </button>
               </h2>
               <img
+                style={{ cursor: 'pointer' }}
                 src={
                   openPanel === faq.id
                     ? 'assets/icons/icon-arrow-close.svg'

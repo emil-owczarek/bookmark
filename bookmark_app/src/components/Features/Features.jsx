@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { featuresData } from './featuresData';
 
-const Features = () => {
-  const [activeFeature, setActiveFeature] = useState(featuresData[0].title);
-
+const Features = ({ activeFeature, setActiveFeature, setModalOpen }) => {
   const handleFeatureClick = (featureName) => {
     setActiveFeature(featureName);
   };
@@ -33,26 +30,35 @@ const Features = () => {
           </button>
         ))}
       </div>
+      <div className="features-container">
+        <div className="hero">
+          <div className="features__image-container">
+            <div>
+              {activeFeatureData && (
+                <img
+                  className="features__image"
+                  src={activeFeatureData.imgUrl}
+                  alt={activeFeatureData.title}
+                />
+              )}
+            </div>
 
-      <div className="features__image-container">
-        <div className="features__bubble"></div>
+            <div className="features__bubble"></div>
+          </div>
+        </div>
+
         {activeFeatureData && (
-          <img
-            className="features__image"
-            src={activeFeatureData.imgUrl}
-            alt={activeFeatureData.title}
-          />
+          <div className="feature__container">
+            <h2 className="features__title">{activeFeatureData.subTitle}</h2>
+            <p className="features__description">
+              {activeFeatureData.description}
+            </p>
+            <button className="features__button" onClick={setModalOpen}>
+              More Info
+            </button>
+          </div>
         )}
       </div>
-
-      {activeFeatureData && (
-        <>
-          <h2 className="features__title">{activeFeatureData.subTitle}</h2>
-          <p className="features__description">
-            {activeFeatureData.description}
-          </p>
-        </>
-      )}
     </section>
   );
 };
