@@ -11,7 +11,7 @@ This project was developed as a test task for Confilogi. The goal was to create 
 
 ## Demo
 
-You can view a live demo of the website here: [Bookmark Management Website Demo](https://emil-owczarek.github.io/bookmark/)
+You can view a live demo of the website here: [Bookmark - Website Demo](https://emil-owczarek.github.io/bookmark/)
 ## Website Features
 
 - **Detailed Description of Bookmark Application**: The website contains a comprehensive overview of the Bookmark application, outlining its functionality and core features.
