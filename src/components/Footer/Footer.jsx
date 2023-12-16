@@ -1,6 +1,5 @@
 const Footer = () => {
   return (
-    //   "homepage": "https://emil-owczarek.github.io/bookmark",
     <footer className="footer">
       <ul className="footer__options">
         <li>

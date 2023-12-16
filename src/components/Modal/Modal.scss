@@ -22,6 +22,47 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 6px 24px 0, rgba(0, 0, 0, 0.8) 0 0 0 1px;
 
+  &__container {
+    padding-right: 30px;
+  }
+
+  &__image {
+    position: relative;
+    width: 95%;
+    max-width: 600px;
+    padding: 60px;
+    padding-top: 92px;
+    padding-left: 20px;
+    max-width: 600px;
+    padding-bottom: 0px;
+    z-index: 20;
+  }
+
+  &__bubble {
+    background-color: hsl(231, 69%, 60%);
+    position: relative;
+    height: 188px;
+    width: 78%;
+    max-width: 291px;
+    margin-left: 0px;
+    left: 0;
+    bottom: 135px;
+    z-index: 7;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 200px;
+  }
+
+  &__button {
+    text-decoration: none;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    display: inline-block;
+  }
+
   &__close-button {
     position: absolute;
     font-size: 20px;
@@ -32,6 +73,7 @@
 
     &:hover {
       color: gray;
+      cursor: pointer;
     }
   }
 }
@@ -46,46 +88,4 @@
 .modal-hero {
   margin-bottom: 60px;
   max-height: 400px;
-}
-
-.modal__image {
-  position: relative;
-  width: 95%;
-  max-width: 600px;
-  padding: 60px;
-  padding-top: 92px;
-  padding-left: 20px;
-  max-width: 600px;
-  padding-bottom: 0px;
-  z-index: 20;
-}
-
-.modal__bubble {
-  background-color: hsl(231, 69%, 60%);
-  position: relative;
-  height: 188px;
-  width: 78%;
-  max-width: 291px;
-  /* top: 105px; */
-  margin-left: 0px;
-  left: 0;
-  bottom: 135px;
-  z-index: 7;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 200px;
-}
-
-.modal__container {
-  padding-right: 30px;
-}
-
-.modal__button {
-  text-decoration: none;
-  background-color: hsl(231, 69%, 60%);
-  color: white;
-  padding: 15px 20px;
-  border-radius: 5px;
-  font-size: 15px;
-  border: 1px solid transparent;
-  display: inline-block;
 }
