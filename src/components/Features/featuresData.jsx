@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const featuresData = [
   {
-    id: 1,
+    id: uuidv4(),
     title: 'Simple Bookmarking',
     subTitle: 'Bookmark in one click',
     imgUrl: 'assets/images/illustration-features-tab-1.svg',
@@ -8,7 +10,7 @@ export const featuresData = [
       'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.',
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: 'Speedy Searching',
     subTitle: 'Intelligent search',
     imgUrl: 'assets/images/illustration-features-tab-2.svg',
@@ -16,7 +18,7 @@ export const featuresData = [
       'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.',
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: 'Easy Sharing',
     subTitle: 'Share your bookmarks',
     imgUrl: 'assets/images/illustration-features-tab-3.svg',

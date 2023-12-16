@@ -9,11 +9,11 @@ const Accordion = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="accordion-wrapper">
       <div className="accordion">
         {faqData.map((faq) => (
           <div
-            className="accordion-panel"
+            className="accordion__panel"
             key={faq.id}
             onClick={() => toggleAccordion(faq.id)}
           >
@@ -25,9 +25,9 @@ const Accordion = () => {
                 gap: '10px',
               }}
             >
-              <h2>
+              <h2 className="accordion__question">
                 <button
-                  className="accordion-trigger"
+                  className="accordion__trigger"
                   aria-expanded={openPanel === faq.id}
                 >
                   {faq.question}
@@ -40,17 +40,17 @@ const Accordion = () => {
                     ? 'assets/icons/icon-arrow-close.svg'
                     : 'assets/icons/icon-arrow.svg'
                 }
-                alt=""
+                alt="open/close arrow"
               />
             </div>
 
             <div
-              className="accordion-content"
+              className="accordion__content"
               role="region"
               aria-hidden={openPanel !== faq.id}
             >
-              <div>
-                <p className="answer">{faq.answer}</p>
+              <div className="accordion__answer-container">
+                <p className="accordion__answer">{faq.answer}</p>
               </div>
             </div>
           </div>
