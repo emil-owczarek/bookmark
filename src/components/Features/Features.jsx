@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import { featuresData } from './featuresData';
 
 const Features = ({ activeFeature, setActiveFeature, setModalOpen }) => {
@@ -53,9 +54,12 @@ const Features = ({ activeFeature, setActiveFeature, setModalOpen }) => {
             <p className="features__description">
               {activeFeatureData.description}
             </p>
-            <button className="features__button" onClick={setModalOpen}>
-              More Info
-            </button>
+            <Button
+              text={'More info'}
+              color={'blue'}
+              addOnClick={setModalOpen}
+              addClass={'features'}
+            />
           </div>
         )}
       </div>

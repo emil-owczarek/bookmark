@@ -1,3 +1,5 @@
+import Button from '../Button/Button';
+
 const Introduction = () => {
   return (
     <div className="introduction">
@@ -7,18 +9,18 @@ const Introduction = () => {
         new browser tab and see your sites load instantly. Try it for free.
       </p>
       <div className="introduction__buttons">
-        <a
-          className="introduction__button introduction__button--blue"
-          href="https://www.google.com/intl/pl_pl/chrome/"
-        >
-          Get it on Chrome
-        </a>
-        <a
-          className="introduction__button introduction__button--white"
-          href="https://www.mozilla.org/pl/firefox/"
-        >
-          Get it on Firefox
-        </a>
+        <Button
+          addHref={'https://www.google.com/intl/pl_pl/chrome/'}
+          text={'Get it on Chrome'}
+          color={'blue'}
+          addClass={'introduction'}
+        />
+        <Button
+          addHref={'https://www.mozilla.org/pl/firefox/'}
+          text={'Get it on Firefox'}
+          color={'gray'}
+          addClass={'introduction'}
+        />
       </div>
     </div>
   );

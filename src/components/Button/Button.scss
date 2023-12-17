@@ -1,0 +1,94 @@
+.button {
+  font-size: 13px;
+  font-family: $font-family-rubik;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: $color-light-red;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-light-red;
+    background-color: white;
+    border-color: $color-light-red;
+  }
+
+  &:active {
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(0, 100%, 55%);
+    border-color: hsl(0, 100%, 55%);
+  }
+
+  &--contact {
+    padding: 14px 15px;
+    margin-top: 20px;
+    width: 100%;
+
+    @media (min-width: 750px) {
+      margin: 0;
+      width: unset;
+    }
+  }
+
+  &--faq {
+    font-size: $small-font-size;
+    padding: 15px 20px;
+  }
+
+  &--features {
+    font-size: $small-font-size;
+    padding: 15px 20px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &--introduction {
+    padding: 17px calc(2.5vw / 1.5);
+    font-size: $small-font-size;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  &--gray {
+    color: gray; // $color-grayish
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0 4px 0px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      background-color: white;
+      color: rgb(54, 54, 54);
+      border: 1px solid rgb(52, 52, 52);
+    }
+
+    &:active {
+      background-color: rgb(52, 52, 52);
+      border: 1px solid transparent;
+      color: white;
+    }
+  }
+
+  &--blue {
+    background-color: $color-light-blue;
+    letter-spacing: normal;
+    text-transform: none;
+
+    &:hover {
+      color: $color-light-blue;
+      background-color: white;
+      border: 1px solid $color-light-blue;
+    }
+
+    &:active {
+      background-color: hsl(231, 100%, 58%);
+      color: white;
+    }
+  }
+}

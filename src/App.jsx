@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div className="app">
       <Navigation isMenuActive={isMenuActive} toggleMenu={toggleMenu} />
-      <div className="hero-container">
+      <div className="hero-wrapper">
         <Hero />
         <Introduction />
       </div>
@@ -61,7 +61,7 @@ const App = () => {
       />
       <Extensions />
       <FAQ setModalOpen={setModalOpen} />
-      <div className="footer-container">
+      <div className="footer-wrapper">
         <Contact />
         <Footer />
       </div>

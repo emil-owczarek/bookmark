@@ -39,7 +39,7 @@
   }
 
   &__bubble {
-    background-color: hsl(231, 69%, 60%);
+    background-color: $color-light-blue;
     position: relative;
     height: 188px;
     width: 78%;
@@ -50,17 +50,6 @@
     z-index: 7;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 200px;
-  }
-
-  &__button {
-    text-decoration: none;
-    background-color: hsl(231, 69%, 60%);
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    font-size: 15px;
-    border: 1px solid transparent;
-    display: inline-block;
   }
 
   &__close-button {
@@ -78,7 +67,7 @@
   }
 }
 
-.modal-container {
+.modal-wrapper {
   display: flex;
   min-height: 224px;
   flex-direction: row;

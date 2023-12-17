@@ -1,7 +1,12 @@
 import { useEffect, useId, useState } from 'react';
+import Button from '../Button/Button';
 
 const Contact = () => {
   const [number, setNumber] = useState(35000);
+  const [isValid, setIsValid] = useState(true);
+  const [formData, setFormData] = useState({
+    email: '',
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,12 +21,6 @@ const Contact = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const [formData, setFormData] = useState({
-    email: '',
-  });
-
-  const [isValid, setIsValid] = useState(true);
 
   const id = useId();
 
@@ -66,7 +65,9 @@ const Contact = () => {
         </h3>
         <div className="contact__form-container">
           <div className="contact__input-container">
-            {/* <label htmlFor={id}>Email</label> */}
+            <label className="contact__label" htmlFor={id}>
+              Email
+            </label>
             <input
               className={inputClassName}
               onChange={handleChange}
@@ -84,7 +85,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <button className="contact__button">Contact Us</button>
+          <Button text={'Contact us'} addClass={'contact'} />
         </div>
       </form>
     </section>

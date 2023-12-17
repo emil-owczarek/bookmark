@@ -1,3 +1,13 @@
+@mixin visually-hidden() {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .contact {
   background-color: $color-light-blue;
   color: white;
@@ -43,7 +53,7 @@
     text-align: center;
 
     @media (min-width: 750px) {
-      font-size: 15px;
+      font-size: $small-font-size;
       padding-bottom: 40px;
     }
   }
@@ -55,7 +65,7 @@
     padding-bottom: 35px;
 
     @media (min-width: 750px) {
-      font-size: 35px;
+      font-size: $large-font-size;
     }
   }
 
@@ -76,40 +86,8 @@
     }
   }
 
-  &__button {
-    font-family: $font-family-rubik;
-    background-color: $color-light-red;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 14px 15px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    margin-top: 20px;
-    border: 1px solid transparent;
-    cursor: pointer;
-
-    &:hover {
-      color: $color-light-red;
-      background-color: white;
-      border-color: $color-light-red;
-    }
-
-    &:active {
-      color: white;
-      border-radius: 5px;
-      background-color: red;
-      border-color: red;
-    }
-
-    @media (min-width: 750px) {
-      margin: 0;
-      width: unset;
-    }
-  }
-
   &__error {
-    font-size: 15px;
+    font-size: $small-font-size;
 
     padding: 5px 15px;
     border-bottom-left-radius: 4px;
@@ -118,6 +96,12 @@
 
     &--hidden {
       display: none;
+    }
+  }
+
+  &__label {
+    &:not(:focus):not(:active) {
+      @include visually-hidden();
     }
   }
 }

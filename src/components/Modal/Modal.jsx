@@ -27,7 +27,7 @@ const Modal = ({ isModalOpen, setModalOpen, activeFeature }) => {
         >
           X
         </button>
-        <div className="modal-container">
+        <div className="modal-wrapper">
           <div className="modal-hero">
             <div className="modal__image-container">
               <div>

@@ -1,0 +1,20 @@
+.app {
+  padding: 0 25px;
+  @media (min-width: 1100px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 0;
+  }
+}
+
+.hero-wrapper {
+  @media (min-width: 1100px) {
+    display: flex;
+  }
+}
+
+.footer-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+}

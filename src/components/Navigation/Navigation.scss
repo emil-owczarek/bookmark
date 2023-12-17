@@ -35,30 +35,4 @@
       display: none;
     }
   }
-
-  &__button {
-    font-size: 13px;
-    font-family: 'Rubik';
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
-    letter-spacing: 1px;
-    padding: 8px 20px;
-    color: white;
-    border-radius: 5px;
-    background-color: $color-light-red;
-    cursor: pointer;
-
-    &:hover {
-      color: $color-light-red;
-      background-color: white;
-      border-color: $color-light-red;
-    }
-
-    &:active {
-      color: white;
-      border-radius: 5px;
-      background-color: red;
-    }
-  }
 }

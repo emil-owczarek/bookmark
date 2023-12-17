@@ -1,3 +1,5 @@
+import Button from '../Button/Button';
+
 const Navigation = ({ toggleMenu }) => {
   return (
     <div className="navigation" id="home">
@@ -23,7 +25,7 @@ const Navigation = ({ toggleMenu }) => {
             </a>
           </li>
           <li>
-            <button className="navigation__button">Login</button>
+            <Button text={'Login'} />
           </li>
         </ul>
       </div>

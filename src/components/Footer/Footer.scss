@@ -1,5 +1,5 @@
 .footer {
-  font-size: 15px;
+  font-size: $small-font-size;
   background-color: $color-dark-blue;
   display: flex;
   align-items: center;
@@ -30,8 +30,10 @@
     text-decoration: none;
     color: rgb(197, 197, 197);
 
-    &:hover {
-      color: $color-light-red;
+    @media (min-width: 900px) {
+      &:hover {
+        color: $color-light-red;
+      }
     }
   }
 
@@ -48,28 +50,65 @@
     }
 
     &--facebook {
-      height: 24px;
-      width: 24px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(../../../public/assets/icons/icon-facebook.svg);
-      cursor: pointer;
+      &::before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../../public/assets/icons/icon-facebook.svg);
+        cursor: pointer;
+        display: block;
+      }
 
-      &:hover {
+      &::after {
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url(../../../public/assets/icons/icon-facebook-red.svg);
+        cursor: pointer;
+        display: none;
       }
     }
 
     &--twitter {
-      height: 24px;
-      width: 27px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url(../../../public/assets/icons/icon-twitter.svg);
-      cursor: pointer;
+      &::before {
+        content: '';
+        height: 24px;
+        width: 27px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../../public/assets/icons/icon-twitter.svg);
+        cursor: pointer;
+        display: block;
+      }
 
-      &:hover {
+      &::after {
+        content: '';
+        height: 24px;
+        width: 27px;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url(../../../public/assets/icons/icon-twitter-red.svg);
+        cursor: pointer;
+        display: none;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .footer__icons--facebook,
+      .footer__icons--twitter {
+        &:hover {
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            display: block;
+          }
+        }
       }
     }
   }
